@@ -14,14 +14,20 @@ public class P1 {
 
   public static void main(String[] args) {
     long sum = 0;
-    for (int i = 1; i < 1000; ++i) {
-      if ((i % 3 == 0) ||(i % 5 == 0)) {
-        sum += i;
+    
+    int temp = UPPER_BOUND / 3;
+    for (int i = 1; i <= temp; ++i) {
+      sum += i * 3;
+    }
+    
+    temp = UPPER_BOUND / 5;
+    for (int i = 1; i < temp; ++i) {
+      if (i % 3 != 0) {
+        sum += i * 5;
       }
     }
     
     System.out.println(sum);
-    
   }
 
 }
