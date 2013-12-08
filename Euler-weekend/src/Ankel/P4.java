@@ -52,7 +52,7 @@ public class P4 {
     int max = 0;
     
     for (int i = 999; i >= 100; --i) {
-      for (int j = 999; j >= 100; --j) {
+      for (int j = i; j >= 100; --j) {
         if (isPalin(i * j) && (i * j > max)) {
           max = i * j;
         }
