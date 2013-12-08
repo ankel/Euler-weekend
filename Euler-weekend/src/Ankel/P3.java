@@ -15,7 +15,7 @@ public class P3 {
    */
   public static void main(String[] args) {
     PrimeList p = new PrimeList();
-    long number = 6 * (long)Math.pow(10, 11) + 851475143;  // Integer too large, java?
+    long number = 600851475143L;  // Integer too large, java?
     long bound = (long)Math.ceil(Math.sqrt(number));
     
     for (long i = 2; i <= bound; ++i) {
